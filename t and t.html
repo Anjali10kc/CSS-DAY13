@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+       .an{
+        border: 2px solid;
+        height: 700px;
+        width: 1000px;
+        text-align: center;
+        padding: 10px;
+        background-color: blue;
+        background-image:url(https://m.media-amazon.com/images/M/MV5BNDIzM2Q0ZTYtMmU0Ni00ZjVkLWFkZDktZDJkNDc5N2EyZmIzXkEyXkFqcGdeQXVyMTE5NTEyNTg5._V1_.jpg);
+            transition: all 1s;
+       }
+       img{
+     border-radius:505% ;
+     position: absolute;
+     bottom: 200px;
+     left: 300px;
+       }
+       button.a:hover~img{
+        transition: all 3s;
+        transform:  translate(300px);
+        background-color: grey;
+        transition-timing-function: ease-in;
+       }
+       button.b:hover~img{
+        transition: all 1s;
+        transform:  rotate(360deg);
+        background-color: grey;
+        transition-timing-function: ease-in;
+       }
+       button.c:hover~img{
+        transition: all 3s;
+        transform:  scale(5);
+        background-color: grey;
+       }
+       button.d:hover~img{
+        transition: all 3s;
+        transform:  skew(360deg);
+        background-color: grey;
+       }
+       .a{
+        background-color: brown;
+        padding: 10px;
+        border: 1px solid;
+        color: white;
+       }
+       .b{
+        background-color: brown;
+        padding: 10px;
+        border: 1px solid;
+        color: white;
+       }
+       .c{
+        background-color: brown;
+        padding: 10px;
+        border: 1px solid;
+        color: white;
+       }
+       .d{
+        background-color: brown;
+        padding: 10px;
+        border: 1px solid;
+        color: white;
+       }
+       
+    </style>
+</head>
+<body>
+    <div class="an">
+        <button class="a">translate</button>
+         <button class="b">rotate</button>
+        <button class="c">scale</button>
+        <button class="d">skew</button>
+        <img src="https://i.ytimg.com/vi/Y1AlvUhh-Jc/maxresdefault.jpg" height="100px" width="200px">
+    
+    </div>
+</body>
+</html>
